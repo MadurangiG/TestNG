@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Test Suit" verbose="1" >
+    <test name="groups" >
+        <groups>
+            <run>
+                <!--<include name="smoke"/>-->
+               <!-- <include name="reg"/>-->
+                <exclude name="reg"></exclude>
+                <exclude name="smoke"></exclude>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="groups.GroupTest1"/>
+            <class name="groups.GroupTest2"/>
+            <class name="groups.GroupTest3"/>
+        </classes>
+    </test>
+</suite>
